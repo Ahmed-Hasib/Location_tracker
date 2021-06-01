@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#E94A36"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="Location Tracker "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#0F2D35"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:text="Tracking time interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+
+    <Button
+        style="@style/style_btn"
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Stop" />
+
+       <TextView
+           android:padding="10dp"
+           android:layout_marginTop="50dp"
+           android:layout_gravity="center"
+           android:textSize="20dp"
+           android:textAlignment="textStart"
+           android:textColor="@color/colorPrimary"
+           android:id="@+id/txt_err_status"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
